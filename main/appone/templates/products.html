@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Boba Bliss</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-cup-hot me-2"></i>
+                <span class="fw-bold">Boba Bliss</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'home' %}">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'products' %}">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'cart' %}">Cart</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <h1 class="text-center mb-5">Our Milk Tea Menu</h1>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/placeholder.svg?height=300&width=300" class="card-img-top" alt="Classic Milk Tea">
+                            <div class="card-body">
+                                <h5 class="card-title">Classic Milk Tea</h5>
+                                <p class="card-text">Our signature milk tea with smooth and creamy texture.</p>
+                                <p class="card-text"><small class="text-muted">$4.99</small></p>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <button class="btn btn-primary w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/placeholder.svg?height=300&width=300" class="card-img-top" alt="Taro Milk Tea">
+                            <div class="card-body">
+                                <h5 class="card-title">Taro Milk Tea</h5>
+                                <p class="card-text">Creamy taro flavor blended perfectly with our milk tea base.</p>
+                                <p class="card-text"><small class="text-muted">$5.49</small></p>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <button class="btn btn-primary w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/placeholder.svg?height=300&width=300" class="card-img-top" alt="Matcha Latte">
+                            <div class="card-body">
+                                <h5 class="card-title">Matcha Latte</h5>
+                                <p class="card-text">Rich matcha green tea mixed with creamy milk.</p>
+                                <p class="card-text"><small class="text-muted">$5.99</small></p>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <button class="btn btn-primary w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/placeholder.svg?height=300&width=300" class="card-img-top" alt="Brown Sugar Milk Tea">
+                            <div class="card-body">
+                                <h5 class="card-title">Brown Sugar Milk Tea</h5>
+                                <p class="card-text">Caramelized brown sugar syrup with our creamy milk tea.</p>
+                                <p class="card-text"><small class="text-muted">$5.99</small></p>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <button class="btn btn-primary w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/placeholder.svg?height=300&width=300" class="card-img-top" alt="Mango Green Tea">
+                            <div class="card-body">
+                                <h5 class="card-title">Mango Green Tea</h5>
+                                <p class="card-text">Refreshing green tea infused with sweet mango flavor.</p>
+                                <p class="card-text"><small class="text-muted">$5.49</small></p>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <button class="btn btn-primary w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="/placeholder.svg?height=300&width=300" class="card-img-top" alt="Strawberry Milk Tea">
+                            <div class="card-body">
+                                <h5 class="card-title">Strawberry Milk Tea</h5>
+                                <p class="card-text">Fruity strawberry flavor blended with our creamy milk tea.</p>
+                                <p class="card-text"><small class="text-muted">$5.99</small></p>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <button class="btn btn-primary w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <p class="small text-muted mb-0">&copy; 2024 Boba Bliss. All rights reserved.</p>
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <a href="#" class="text-muted me-2">Terms of Service</a>
+                    <a href="#" class="text-muted">Privacy</a>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <a href="#" class="text-muted me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-muted me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-muted"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
